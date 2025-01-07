@@ -1,0 +1,28 @@
+name: Contracts CD
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  build_and_test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: Install Yarn
+        run: npm install -g yarn
+      - run: yarn
+      - run: yarn build
+      - name: Run contract tests
+        run: |
+          cd packages/nouns-contracts
+          yarn test
+      - name: Uninstall Yarn
+        if: always()
+        run: npm uninstall -g yarn

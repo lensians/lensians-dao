@@ -1,0 +1,19 @@
+{
+  "network": "polygon-amoy",
+  "nounsToken": {
+    "address": "0xE4F1caD511a8c1Ce95b35c31d2a4Bf06c3aAE1f4",
+    "startBlock": 9061789
+  },
+  "nounsAuctionHouse": {
+    "address": "0x5dADA84150d093212105f854ABfCb06fA4074e9E",
+    "startBlock": 9061800
+  },
+  "nounsDAO": {
+    "address": "0xF9743aEE36C9aAC1F3821941F8Df7Daa7C6B4111",
+    "startBlock": 8432952
+  },
+  "nounsDAOData": {
+    "address": "0x6E6EBc6F2c1270F802B5C03c3C42d4B56014A583",
+    "startBlock": 8432983
+  }
+}
